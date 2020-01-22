@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: lightgray;
+                font-family: sans-serif;
+            }
+            main {
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+
+            }
+            .navbar {
+                background-color: dodgerblue;
+                flex: 1;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 1rem;
+
+            }
+            .logo{
+                font-size: 1.5rem;
+            }
+            .content {
+                background: white;
+                flex: 12;
+            }
+
+            @media (max-width: 500px) {
+                .navbar {
+                    flex: 4;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                }
+                .logo {
+                    margin-bottom: 1.5
+                    rem;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="navbar">
+                <div class='logo'>Acme Layout</div>
+                <div>Users</div>
+                <Div>Departments</Div>
+                <div>Contact</div>
+    
+            </div>
+            <div class="content">
+
+            </div>
+        </main>
+    </body>
+</html>
